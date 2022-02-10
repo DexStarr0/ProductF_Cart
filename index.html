@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="blur1">
+      <h1>
+        Add To Cart <span>Please place order of any type of fruits.</span>
+      </h1>
+
+      <div class="content">
+        <form id="form">
+          <input type="text" name="product" placeholder="Product Name" />
+          <input type="number" name="quantity" placeholder="Quantity" />
+          <button onclick="initilizeclass() ; open_pop_box()">
+            Add To Cart
+          </button>
+          <a href="cart.html" target="_blank"
+            ><i class="bx bx-cart bx-md bx-tada"></i
+          ></a>
+        </form>
+      </div>
+    </div>
+    <section class="add_msg">
+      <h1>Item Has Added To Cart <span>Please check your cart</span></h1>
+      <button onclick="close_pop_box()">OK</button>
+    </section>
+
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
